@@ -1,0 +1,14 @@
+CREATE TABLE IF NOT EXISTS users (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  username TEXT UNIQUE,
+  password_hash TEXT
+);
+
+CREATE TABLE IF NOT EXISTS matches (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  player_a TEXT,
+  player_b TEXT,
+  score_a INTEGER,
+  score_b INTEGER,
+  played_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);

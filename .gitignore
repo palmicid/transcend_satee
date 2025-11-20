@@ -1,0 +1,9 @@
+# node, build, env
+node_modules/
+dist/
+.vscode/
+.env
+*.sqlite
+.DS_Store
+/goinfre
+/sgoinfre
