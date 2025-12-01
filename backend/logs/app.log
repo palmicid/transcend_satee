@@ -1,0 +1,9 @@
+{"level":30,"time":1764575192392,"pid":1,"hostname":"b061c7b800fb","msg":"Server listening at http://127.0.0.1:3000"}
+{"level":30,"time":1764575192392,"pid":1,"hostname":"b061c7b800fb","msg":"Server listening at http://172.20.0.3:3000"}
+{"level":30,"time":1764575233624,"pid":1,"hostname":"dd52f712dd24","msg":"Server listening at http://127.0.0.1:3000"}
+{"level":30,"time":1764575233624,"pid":1,"hostname":"dd52f712dd24","msg":"Server listening at http://172.20.0.3:3000"}
+{"level":30,"time":1764575281854,"pid":1,"hostname":"dd52f712dd24","reqId":"req-4","req":{"method":"GET","url":"/health","host":"localhost:3000","remoteAddress":"172.20.0.1","remotePort":41050},"msg":"incoming request"}
+{"level":30,"time":1764575281856,"pid":1,"hostname":"dd52f712dd24","reqId":"req-4","res":{"statusCode":200},"responseTime":0.6010689735412598,"msg":"request completed"}
+{"level":30,"time":1764575281877,"pid":1,"hostname":"dd52f712dd24","reqId":"req-5","req":{"method":"GET","url":"/favicon.ico","host":"localhost:3000","remoteAddress":"172.20.0.1","remotePort":41050},"msg":"incoming request"}
+{"level":30,"time":1764575281878,"pid":1,"hostname":"dd52f712dd24","reqId":"req-5","msg":"Route GET:/favicon.ico not found"}
+{"level":30,"time":1764575281878,"pid":1,"hostname":"dd52f712dd24","reqId":"req-5","res":{"statusCode":404},"responseTime":0.7186110019683838,"msg":"request completed"}

@@ -8,10 +8,15 @@ import pino from 'pino';
 const logDir = '/var/log/app';
 if (!fs.existsSync(logDir)) fs.mkdirSync(logDir, { recursive: true });
 const logStream = fs.createWriteStream(`${logDir}/app.log`, { flags: 'a' });
-const logger = pino({}, logStream);
 
 // === Init Fastify ===
-const fastify = Fastify({ logger });
+// We pass the stream directly. Fastify will create the logger for us.
+const fastify = Fastify({
+  logger: {
+    level: 'info',
+    stream: logStream
+  }
+});
 
 // === Register Plugins ===
 await fastify.register(cors, { origin: true });

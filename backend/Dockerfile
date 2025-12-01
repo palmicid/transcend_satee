@@ -19,4 +19,4 @@ COPY . .
 RUN mkdir -p /var/log/app
 
 EXPOSE 3000
-CMD ["node", "main.js"]
+CMD ["node", "src/main.js"]
